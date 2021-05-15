@@ -1,3 +1,5 @@
+package chris
+
 func removeDuplicates(nums []int) int {
     pos := 1
 	for i := 1; i < len(nums); i++ {
