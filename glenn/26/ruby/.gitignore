@@ -1,0 +1,6 @@
+Gemfile.lock
+Gemfile.local
+.bundle/
+log/
+.DS_Store
+tmp/
