@@ -4,17 +4,17 @@ import (
 	"testing"
 )
 
-type testCase struct {
-	input    []int
-	expected duplicateExpected
-}
-
-type duplicateExpected struct {
-	output int
-	array  []int
-}
-
 func TestRemoveDuplicates(t *testing.T) {
+
+	type duplicateExpected struct {
+		output int
+		array  []int
+	}
+
+	type testCase struct {
+		input    []int
+		expected duplicateExpected
+	}
 
 	tests := []testCase{
 		{
