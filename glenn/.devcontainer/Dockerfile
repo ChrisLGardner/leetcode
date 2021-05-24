@@ -42,8 +42,8 @@ RUN wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod
     && tar xvf go1.16.4.linux-amd64.tar.gz \
     && chown -R root:root ./go \
     && mv go /usr/local \
-    && echo "GOPATH=\$HOME/work" >> ~/.profile \
-    && echo "PATH=\$PATH:/usr/local/go/bin:\$GOPATH/bin" >> ~/.profile \
+    && echo "GOPATH=\$HOME/work" >> ~/.bashrc \
+    && echo "PATH=\$PATH:/usr/local/go/bin:\$GOPATH/bin" >> ~/.bashrc \
     && export GOPATH=$HOME/work \
     && export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin \
     && go get -v golang.org/x/tools/gopls \
