@@ -1,5 +1,5 @@
 import { maxProfit } from '../src/BestDay';
-import { expect } from 'chai';
+import { assert } from 'chai';
 import 'mocha';
 describe('Example tests',
     () => {
@@ -8,7 +8,7 @@ describe('Example tests',
             const expected = 5;
 
             const result = maxProfit(input);
-            expect(result).to.equal(expected);
+            assert.equal(result, expected);
         });
 
         it('Example 2', () => {
@@ -16,7 +16,7 @@ describe('Example tests',
             const expected = 0;
 
             const result = maxProfit(input);
-            expect(result).to.equal(expected);
+            assert.equal(result, expected);
         });
     });
 

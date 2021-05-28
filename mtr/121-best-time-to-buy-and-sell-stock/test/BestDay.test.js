@@ -8,12 +8,12 @@ describe('Example tests', () => {
         const input = [7, 1, 5, 3, 6, 4];
         const expected = 5;
         const result = BestDay_1.maxProfit(input);
-        chai_1.expect(result).to.equal(expected);
+        chai_1.assert.equal(result, expected);
     });
     it('Example 2', () => {
         const input = [7, 6, 4, 3, 1];
         const expected = 0;
         const result = BestDay_1.maxProfit(input);
-        chai_1.expect(result).to.equal(expected);
+        chai_1.assert.equal(result, expected);
     });
 });
