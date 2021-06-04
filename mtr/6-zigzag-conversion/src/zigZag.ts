@@ -6,18 +6,16 @@ var convert = function convert(s: string, numRows: number): string {
     var yIndex = 0;
     var ret:string = "";
 
+    // init grid
+    for (var i = 0; i < numRows; i++) {
+        grid.push([]);
+    }
+
     // build the grid
     for (var i = 0; i < s.length; i++) {
         if (!travelUp) {
             // traveling down means adding a new row
-            if (i > numRows) {
-                // rows are already created
-                grid[yIndex].push(s[i]);
-            }
-            else {
-                // first time on this row
-                grid.push([s[i]]);
-            }
+            grid[yIndex].push(s[i]);
             
             if (yIndex == numRows - 1) {
                 // at the bottom
